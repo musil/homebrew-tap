@@ -1,13 +1,13 @@
 class Smu < Formula
     desc "Stanislav Musil Utilities"
     homepage "https://smu.dc5.cz"
-    version "0.4.7"
+    version "0.4.8"
   
   
     on_macos do
         if Hardware::CPU.arm?
-          url "https://smu.dc5.eu/dist/smu_v0.4.7_darwin_arm64.tar.gz"
-          sha256 "9eadd108c6818f771366faaec38bf284bd0bb64e0f4698df41d20e5dd3faf0fa"
+          url "https://smu.dc5.eu/dist/smu_v0.4.8_darwin_arm64.tar.gz"
+          sha256 "a5c1282f656f0bbfa3102b1dddd0cf01b18f69c5ee4a15175e0f6ddbb8f88c51"
     
           def install
             bin.install "smu"
@@ -17,16 +17,16 @@ class Smu < Formula
     
       on_linux do
         if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-          url "https://smu.dc5.eu/dist/smu_v0.4.7_linux_arm64.tar.gz"
-          sha256 "f477c786549def96d4a86a35a6c33455c20fed78e18681c806b842e40582cea5"
+          url "https://smu.dc5.eu/dist/smu_v0.4.8_linux_arm64.tar.gz"
+          sha256 "6f3f6b5fe9a3c65e3e59756eb5e7d09c93772d33b0ba8480eebb0d886d5bb4a7"
     
           def install
             bin.install "smu"
           end
         end
         if Hardware::CPU.intel?
-          url "https://smu.dc5.eu/dist/smu_v0.4.7_linux_amd64.tar.gz"
-          sha256 "3461f49843782e8997f6fc7c998c59a8f8335729cf6faa75b255aa13daec0193"
+          url "https://smu.dc5.eu/dist/smu_v0.4.8_linux_amd64.tar.gz"
+          sha256 "2bea35e5bbfef00669b64efabf8c4de380258bbde953fbb12286da30b131f308"
     
           def install
             bin.install "smu"
