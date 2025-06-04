@@ -1,7 +1,7 @@
 class Smu < Formula
     desc "Stanislav Musil Utilities"
     homepage "https://smu.dc5.cz"
-    version "0.6.2"
+    version "0.6.3"
   
   
     on_macos do
