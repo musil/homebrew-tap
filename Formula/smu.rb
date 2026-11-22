@@ -7,7 +7,7 @@ class Smu < Formula
     on_macos do
         if Hardware::CPU.arm?
           url "https://smu.dc5.eu/dist/smu_v0.9.8_darwin_arm64.tar.gz"
-          sha256 "9ed7647d2b2ae28f3a640e4464a1dd44bed3de103d79f3ecf6dbf12155f5a664"
+          sha256 "05507dec6b2ac1026528d720fc8ef3155cbb9934959292e1175a4612102db7cf"
     
           def install
             bin.install "smu"
@@ -18,7 +18,7 @@ class Smu < Formula
       on_linux do
         if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
           url "https://smu.dc5.eu/dist/smu_v0.9.8_linux_arm64.tar.gz"
-          sha256 "ac594a88833dce99431624411b27d0916b72c8128cf6c4661cde98b44fafbd6c"
+          sha256 "a856cb17350228079228d5b9472f631174f3d51c9edcce0b57aad5a30156f4e0"
     
           def install
             bin.install "smu"
@@ -26,7 +26,7 @@ class Smu < Formula
         end
         if Hardware::CPU.intel?
           url "https://smu.dc5.eu/dist/smu_v0.9.8_linux_amd64.tar.gz"
-          sha256 "ed3e04496dbb63a11e3ee022c070ef26d72875f94d6b871da74a5bac2da2e11e"
+          sha256 "bf4240312a8c7a9064781bcc876164b17fb38f820f7585deabdc43ef3a33ce3c"
     
           def install
             bin.install "smu"
